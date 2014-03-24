@@ -1,0 +1,15 @@
+<table>
+<tr>
+<td><strong>Name</strong></td>
+</tr>
+
+<% @users.each do |u| %>
+	<tr>
+	<td><%= print u.name %></td>
+	</tr>
+<% end %>
+
+</table>
+
+<br/>
+<%= link_to "Back", action: "index" %>
