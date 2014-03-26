@@ -3,11 +3,14 @@ test
 <table>
 <tr>
 <td><strong>Name</strong></td>
+<td><strong>Email</strong></td>
+<td><strong>Email</strong></td>
 </tr>
 
-<% @users.each do |u| %>
+<%= @users.each do |u| %>
 	<tr>
 	<td><%= print u.name %></td>
+	<td><%= print u.email %></td>
 	<td><%= link_to "Show", u %></td>
 	</tr>
 <% end %>
