@@ -1,5 +1,12 @@
-<%= @user.email %>
+﻿<%= @user.email %>
 
+<%= form_tag("/users/:id", method: "put") do %>
+<%= label_tag(:q, "name:") %>
+<%= text_field_tag(:q) %>
+<%= submit_tag("Search") %>
+<% end %>
+
+<br />
 <br /><%= link_to "Back to Profile", @user %>
 <br /><%= link_to "Browse Users", users_path %> 
 
